@@ -140,6 +140,7 @@ func resourcePlaybook() *schema.Resource {
 				Elem:        &schema.Schema{Type: schema.TypeString},
 				Required:    false,
 				Optional:    true,
+				Sensitive:   true,
 				Description: "A map of additional variables as: { key-1 = value-1, key-2 = value-2, ... }.",
 			},
 
@@ -182,6 +183,7 @@ func resourcePlaybook() *schema.Resource {
 				Type:        schema.TypeList,
 				Elem:        &schema.Schema{Type: schema.TypeString},
 				Computed:    true,
+				Sensitive:   true,
 				Description: "Used to build arguments to run Ansible playbook with.",
 			},
 
