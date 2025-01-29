@@ -4,6 +4,14 @@ The Terraform Provider for Ansible Release Notes
 
 .. contents:: Topics
 
+v1.3.1
+======
+
+Bugfixes
+--------
+
+- make args & extra_vars sensitive.
+
 v1.3.0
 ======
 
